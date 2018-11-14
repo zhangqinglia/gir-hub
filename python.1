@@ -1,0 +1,16 @@
+def jinzhi(n):
+    list = []
+    b = 666
+    while True:
+        z=b//n
+        s=b%n
+        list.append(s)
+        if z==0:
+            break
+        b=z
+    list.reverse()
+    for i in list:
+        a = int(i)
+        print(a,end="")
+x=int(input())
+print(jinzhi(x))
